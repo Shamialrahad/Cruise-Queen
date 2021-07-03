@@ -2,7 +2,7 @@
 function selectTicketChange(ticket,isIncrease){
     const ticketCount = getInputValue(ticket);
     let ticketNewCount = ticketCount;
-    if(isIncrease == true){
+    if(isIncrease == true && ticketCount <10){
         ticketNewCount = ticketCount + 1;
     }
     if(isIncrease == false && ticketCount > 0){
